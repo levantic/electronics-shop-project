@@ -1,11 +1,13 @@
 from src.item import Item
-.f
+
 if __name__ == '__main__':
     item1 = Item("Смартфон", 10000, 20)
     item2 = Item("Ноутбук", 20000, 5)
 
-    print(item1.calculate_total_price())  # 200000
-    print(item2.calculate_total_price())  # 100000
+    print(item2.name, item1.name)
+
+    print(f'товар 1:{item1.calculate_total_price()}')  # 200000
+    print(f'товар 2:{item2.calculate_total_price()}')  # 100000
 
     # устанавливаем новый уровень цен
     Item.pay_rate = 0.8
